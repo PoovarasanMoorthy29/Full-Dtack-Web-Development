@@ -1,0 +1,103 @@
+<!-- Create a Students registration form with buttons minimum 12 fields. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students registration</title>
+    <link rel="stylesheet" href="../Question4/Style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="studentForm">
+            <h1>Student Registration Form</h1>
+            
+            <div class="form-group">
+                <label for="FirstName">First Name</label>
+                <input type="text" id="FirstName" name="FirstName" placeholder="Enter your first name..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="LastName">Last Name</label>
+                <input type="text" id="LastName" name="LastName" placeholder="Enter your last name..." required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Age">Age</label>
+                    <input type="number" id="Age" name="Age" min="15" max="40" required>
+                </div>
+                <div class="form-group">
+                    <label for="DOB">Date of Birth</label>
+                    <input type="date" name="DOB" id="DOB" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="CollegeName">College Name</label>
+                <input type="text" id="CollegeName" name="CollegeName" placeholder="Enter your college name..." required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Year">Year</label>
+                    <select id="Year" name="Year" required>
+                        <option value="">-- Select Year --</option>
+                        <option value="1">I Year</option>
+                        <option value="2">II Year</option>
+                        <option value="3">III Year</option>
+                        <option value="4">IV Year</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="MobileNo">Mobile Number</label>
+                    <input type="tel" name="MobileNo" id="MobileNo" placeholder="10-digit number" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" id="Email" placeholder="Enter your email..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="AlterEmail">Alternate Email</label>
+                <input type="email" name="AlterEmail" id="AlterEmail" placeholder="Enter alternate email...">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Programs">Program Interest</label>
+                    <select id="Programs" name="Programs" required>
+                        <option value="">-- Select Program --</option>
+                        <option value="1">Competitive Programming</option>
+                        <option value="2">Building Landing Page</option>
+                        <option value="3">Debugging</option>
+                        <option value="4">BGMI</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="NoOfParticipation">Participation Type</label>
+                    <select id="NoOfParticipation" name="NoOfParticipation" required>
+                        <option value="">-- Select Type --</option>
+                        <option value="1">Individual</option>
+                        <option value="2">Team of 2</option>
+                        <option value="3">Team of 4</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Payment">Payment Screenshot</label>
+                <input type="file" name="Payment" id="Payment" accept="image/*" required>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-submit">Submit</button>
+                <button type="reset" class="btn btn-reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+ 
