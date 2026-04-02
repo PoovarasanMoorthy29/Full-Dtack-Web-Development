@@ -6,6 +6,36 @@
     <title>Calculator</title>
 </head>
 <body>
+    <script>
+        function add(num1,num2){
+            alert( num1 + num2) ;
+        }
+        function sub(num1,num2){
+            alert(num1-num2) ;
+        }
+        function multiply(num1,num2){
+            alert(num1*num2) ;
+        }
+        function divide(num1,num2){
+            alert(num1/num2) ;
+        }
+        var num1=Number(prompt("Enter the first number "));
+        var num2=Number(prompt("Enter the second number "));
+        var operation=prompt("Enter the operation ");
+        if(operation=="+"){
+            add(num1,num2);
+        }
+        else if(operation=="-"){
+            sub(num1,num2);
+        }
+        else if(operation=="*"){
+            multiply(num1,num2);
+        }
+        else if(operation=="/"){
+            divide(num1,num2);
+        }
+    </script>
+
     
 </body>
 </html>
