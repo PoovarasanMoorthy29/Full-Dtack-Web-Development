@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            height:50px;
+            width:100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(128, 128, 128, 0.471);
+            border-radius: 1rem;
+
+        }
+        .hero-section{
+            background-color: blue;
+            height:90vh;
+            margin-top:10px;
+            border-radius: 1rem;
+        }
+        @media(max-width:640px){
+            nav{
+                display: none;
+                background-color: blue;
+                margin:0;
+            }
+            .hero-section{
+                margin-top:0;
+                height:100vh;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav><a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Solutions</a>
+        <a href="#">Partner</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero-section">
+
+    </section>
+</body>
+</html>
